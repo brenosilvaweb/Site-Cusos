@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Overlock SC", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadrogeral {
+    width: 600px;
+    /*border: 2px solid rgb(1, 6, 170);*/
+}
+
+.interiorQuadro {
+    width: 95%;
+    margin: auto;
+    /*border: 2px solid black;*/
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.logoNome {
+    width: 30%;
+    /*border: 2px solid red;*/
+}
+
+.logoNome:hover {
+   background-color: rgb(214, 200, 200, 0.5);
+   border-radius: 20px 10px 20px 10px;
+}
+
+.conteudo a{
+    text-decoration:none;
+}
+
+.conteudo img {
+    height: 95px;
+    display: block;
+    margin: 15px auto;
+}
+
+.conteudo p {
+    text-align: center;
+    margin: 15px 0;
+}
+
+@media (max-width: 700px) {
+
+    html, body {
+        display: block;
+    }
+
+    .quadrogeral {
+        width: 100%;
+    }
+
+    .interiorQuadro {
+        display: block;
+        width: 80%;
+        padding: 10px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .logoNome {
+        width: 80%;
+        /*border: 2px solid red;*/
+        margin: 0 auto 40px auto;
+    }
+
+    .conteudo img {
+        height: 90px;
+    }
+    
+    .conteudo p {
+        font-size: 22px;
+    }
+}
